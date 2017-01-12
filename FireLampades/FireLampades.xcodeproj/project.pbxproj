@@ -14,6 +14,8 @@
 		7862FC251E26A59A00357A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7862FC241E26A59A00357A4A /* Assets.xcassets */; };
 		7862FC281E26A59A00357A4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7862FC261E26A59A00357A4A /* LaunchScreen.storyboard */; };
 		7862FC331E26A59A00357A4A /* FireLampadesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7862FC321E26A59A00357A4A /* FireLampadesTests.swift */; };
+		A7AAE9413A43DD8D2436EB37 /* Pods_FireLampades.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D680E33630B6F5E13E076E /* Pods_FireLampades.framework */; };
+		D8AA3A5C4015785FB3A8BBA3 /* Pods_FireLampadesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A346E256F1C429FAA537857 /* Pods_FireLampadesTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A346E256F1C429FAA537857 /* Pods_FireLampadesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireLampadesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F0AB45AB464903EA7E9E5A /* Pods-FireLampadesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLampadesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireLampadesTests/Pods-FireLampadesTests.release.xcconfig"; sourceTree = "<group>"; };
 		7862FC171E26A59A00357A4A /* FireLampades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireLampades.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7862FC1A1E26A59A00357A4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7862FC1C1E26A59A00357A4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +42,10 @@
 		7862FC2E1E26A59A00357A4A /* FireLampadesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireLampadesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7862FC321E26A59A00357A4A /* FireLampadesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireLampadesTests.swift; sourceTree = "<group>"; };
 		7862FC341E26A59A00357A4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E58B31C0419A49713BF657A /* Pods-FireLampades.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLampades.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireLampades/Pods-FireLampades.debug.xcconfig"; sourceTree = "<group>"; };
+		85D680E33630B6F5E13E076E /* Pods_FireLampades.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireLampades.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B07A4ADEA145AE8FB2685177 /* Pods-FireLampades.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLampades.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireLampades/Pods-FireLampades.release.xcconfig"; sourceTree = "<group>"; };
+		C8F32787DD8A666E06819CA8 /* Pods-FireLampadesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLampadesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireLampadesTests/Pods-FireLampadesTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7AAE9413A43DD8D2436EB37 /* Pods_FireLampades.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +61,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8AA3A5C4015785FB3A8BBA3 /* Pods_FireLampadesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		641CDC497662039BCD20839F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85D680E33630B6F5E13E076E /* Pods_FireLampades.framework */,
+				1A346E256F1C429FAA537857 /* Pods_FireLampadesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7862FC0E1E26A59900357A4A = {
 			isa = PBXGroup;
 			children = (
 				7862FC191E26A59A00357A4A /* FireLampades */,
 				7862FC311E26A59A00357A4A /* FireLampadesTests */,
 				7862FC181E26A59A00357A4A /* Products */,
+				CB1346573B856EC55FA57917 /* Pods */,
+				641CDC497662039BCD20839F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +120,17 @@
 			path = FireLampadesTests;
 			sourceTree = "<group>";
 		};
+		CB1346573B856EC55FA57917 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E58B31C0419A49713BF657A /* Pods-FireLampades.debug.xcconfig */,
+				B07A4ADEA145AE8FB2685177 /* Pods-FireLampades.release.xcconfig */,
+				C8F32787DD8A666E06819CA8 /* Pods-FireLampadesTests.debug.xcconfig */,
+				32F0AB45AB464903EA7E9E5A /* Pods-FireLampadesTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7862FC371E26A59A00357A4A /* Build configuration list for PBXNativeTarget "FireLampades" */;
 			buildPhases = (
+				C4264085ABE4AB1EE10E9652 /* [CP] Check Pods Manifest.lock */,
 				7862FC131E26A59900357A4A /* Sources */,
 				7862FC141E26A59900357A4A /* Frameworks */,
 				7862FC151E26A59900357A4A /* Resources */,
+				29B91F0E5A515F8514185333 /* [CP] Embed Pods Frameworks */,
+				13B05FAC91C7DBEC3594CE35 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7862FC3A1E26A59A00357A4A /* Build configuration list for PBXNativeTarget "FireLampadesTests" */;
 			buildPhases = (
+				985D898F0E37FEFCA7EDAF62 /* [CP] Check Pods Manifest.lock */,
 				7862FC2A1E26A59A00357A4A /* Sources */,
 				7862FC2B1E26A59A00357A4A /* Frameworks */,
 				7862FC2C1E26A59A00357A4A /* Resources */,
+				E82F7392C2DC8AAF99D231CD /* [CP] Embed Pods Frameworks */,
+				68323F67A1EB1FE6169381D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +234,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13B05FAC91C7DBEC3594CE35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireLampades/Pods-FireLampades-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29B91F0E5A515F8514185333 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireLampades/Pods-FireLampades-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68323F67A1EB1FE6169381D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireLampadesTests/Pods-FireLampadesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		985D898F0E37FEFCA7EDAF62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4264085ABE4AB1EE10E9652 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E82F7392C2DC8AAF99D231CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireLampadesTests/Pods-FireLampadesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7862FC131E26A59900357A4A /* Sources */ = {
@@ -341,6 +472,7 @@
 		};
 		7862FC381E26A59A00357A4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E58B31C0419A49713BF657A /* Pods-FireLampades.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FireLampades/Info.plist;
@@ -353,6 +485,7 @@
 		};
 		7862FC391E26A59A00357A4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B07A4ADEA145AE8FB2685177 /* Pods-FireLampades.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FireLampades/Info.plist;
@@ -365,6 +498,7 @@
 		};
 		7862FC3B1E26A59A00357A4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8F32787DD8A666E06819CA8 /* Pods-FireLampadesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -379,6 +513,7 @@
 		};
 		7862FC3C1E26A59A00357A4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32F0AB45AB464903EA7E9E5A /* Pods-FireLampadesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
