@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var username: UITextField!
+    @IBOutlet var password: UITextField!
+    
+    @IBAction func submitButtonTap(sender: UIButton) {
+        print("Username = \(username.text ?? "Undefined")")
+        print("Password = \(password.text ?? "Undefined")")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
