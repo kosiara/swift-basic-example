@@ -10,5 +10,6 @@ osx_image: xcode6.4
 xcode_sdk: iphonesimulator10.1
 
 script:
+- instruments -s devices # list all available devices
 - xcodebuild clean build test -workspace FireLampades/FireLampades.xcworkspace -scheme FireLampades -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.1'
 
