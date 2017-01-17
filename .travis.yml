@@ -6,13 +6,13 @@ language: objective-c
 
 xcode_workspace: Swifternalization.xcodeproj
 xcode_scheme: SwifternalizationTests
-osx_image: xcode6.4
+osx_image: xcode8
 xcode_sdk: iphonesimulator10.1
 podfile: FireLampades/Podfile
 
 before_script:
-- cd FireLampades; pod repo update
-- pod install; cd ..
+- pod install
+- pod repo update
 
 script:
 #- instruments -s devices # list all available devices
