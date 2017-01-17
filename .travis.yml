@@ -4,14 +4,15 @@ language: objective-c
 # only:
 # - master
 
-xcode_workspace: Swifternalization.xcodeproj
+xcode_project: Swifternalization.xcodeproj
 xcode_scheme: SwifternalizationTests
 osx_image: xcode6.4
 xcode_sdk: iphonesimulator10.1
+podfile: FireLampades/Podfile
 
 script:
-- instruments -s devices # list all available devices
-- cd FireLampades; pod repo update
-- pod install; cd ..
+#- instruments -s devices # list all available devices
+#- cd FireLampades; pod repo update
+#- pod install; cd ..
 - xcodebuild clean build test -workspace FireLampades/FireLampades.xcworkspace -scheme FireLampades -destination 'platform=iOS Simulator,name=iPhone 6,OS=8.4'
 
