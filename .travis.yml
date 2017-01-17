@@ -10,10 +10,13 @@ osx_image: xcode6.4
 xcode_sdk: iphonesimulator10.1
 podfile: FireLampades/Podfile
 
+before_script:
+- cd FireLampades; pod repo update
+- pod install; cd ..
+
 script:
 #- instruments -s devices # list all available devices
 #- cd FireLampades; pod repo update
 #- pod install; cd ..
-- pod repo update
 - xcodebuild clean build test -workspace FireLampades/FireLampades.xcworkspace -scheme FireLampades -destination 'platform=iOS Simulator,name=iPhone 6,OS=8.4'
 
