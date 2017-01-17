@@ -8,11 +8,11 @@ xcode_workspace: Swifternalization.xcodeproj
 xcode_scheme: SwifternalizationTests
 osx_image: xcode8
 xcode_sdk: iphonesimulator10.1
-podfile: FireLampades/Podfile
+#podfile: FireLampades/Podfile
 
 before_script:
-- pod install
-- pod repo update
+- cd FireLampades; pod repo update
+- pod install; cd ..
 
 script:
 #- instruments -s devices # list all available devices
