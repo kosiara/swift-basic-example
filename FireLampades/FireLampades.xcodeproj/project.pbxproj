@@ -11,8 +11,6 @@
 		4A20C3DF1E2E2FF800CD4D73 /* LoginPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A20C3DE1E2E2FF800CD4D73 /* LoginPanelViewController.xib */; };
 		4A20C3E71E2E386C00CD4D73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A20C3E51E2E386C00CD4D73 /* Main.storyboard */; };
 		4A20C3EB1E2E389A00CD4D73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A20C3E81E2E389A00CD4D73 /* AppDelegate.swift */; };
-		4A20C3EC1E2E389A00CD4D73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A20C3E91E2E389A00CD4D73 /* GoogleService-Info.plist */; };
-		4A20C3ED1E2E389A00CD4D73 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A20C3EA1E2E389A00CD4D73 /* Info.plist */; };
 		4A20C3EF1E2E3EB300CD4D73 /* PresentersContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A20C3EE1E2E3EB300CD4D73 /* PresentersContainerFactory.swift */; };
 		4AE3FCB11E2D125D00E5E37A /* ViewControllerContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3FCB01E2D125D00E5E37A /* ViewControllerContainerFactory.swift */; };
 		4AE3FCB31E2D127400E5E37A /* AllContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3FCB21E2D127400E5E37A /* AllContainerFactory.swift */; };
@@ -331,8 +329,6 @@
 			files = (
 				7862FC281E26A59A00357A4A /* LaunchScreen.storyboard in Resources */,
 				4A20C3E71E2E386C00CD4D73 /* Main.storyboard in Resources */,
-				4A20C3ED1E2E389A00CD4D73 /* Info.plist in Resources */,
-				4A20C3EC1E2E389A00CD4D73 /* GoogleService-Info.plist in Resources */,
 				4A20C3DF1E2E2FF800CD4D73 /* LoginPanelViewController.xib in Resources */,
 				7862FC251E26A59A00357A4A /* Assets.xcassets in Resources */,
 			);
