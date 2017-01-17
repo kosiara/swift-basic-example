@@ -6,6 +6,8 @@ target 'FireLampades' do
   use_frameworks!
 
   pod 'FirebaseCore', '~> 3.4'
+  pod 'Swinject', '2.0.0'
+  pod 'SwinjectStoryboard', '1.0.0'
 
   target 'FireLampadesTests' do
     inherit! :search_paths
