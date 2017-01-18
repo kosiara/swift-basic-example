@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBAction func submitButtonTap(sender: UIButton) {
         print("Username = \(username.text ?? "Undefined")")
         print("Password = \(password.text ?? "Undefined")")
+
+
     }
     
     override func viewDidLoad() {
