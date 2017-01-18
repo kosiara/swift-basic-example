@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A7EA2381E27D09F0083F31A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A7EA2371E27D09F0083F31A /* GoogleService-Info.plist */; };
-		7862FC1B1E26A59A00357A4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7862FC1A1E26A59A00357A4A /* AppDelegate.swift */; };
-		7862FC1D1E26A59A00357A4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7862FC1C1E26A59A00357A4A /* ViewController.swift */; };
-		7862FC201E26A59A00357A4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7862FC1E1E26A59A00357A4A /* Main.storyboard */; };
-		7862FC231E26A59A00357A4A /* FireLampades.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7862FC211E26A59A00357A4A /* FireLampades.xcdatamodeld */; };
+		4A20C3DD1E2E2FDC00CD4D73 /* LoginPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A20C3DC1E2E2FDC00CD4D73 /* LoginPanelViewController.swift */; };
+		4A20C3DF1E2E2FF800CD4D73 /* LoginPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A20C3DE1E2E2FF800CD4D73 /* LoginPanelViewController.xib */; };
+		4A20C3E71E2E386C00CD4D73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A20C3E51E2E386C00CD4D73 /* Main.storyboard */; };
+		4A20C3EB1E2E389A00CD4D73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A20C3E81E2E389A00CD4D73 /* AppDelegate.swift */; };
+		4A20C3EF1E2E3EB300CD4D73 /* PresentersContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A20C3EE1E2E3EB300CD4D73 /* PresentersContainerFactory.swift */; };
+		4AE3FCB11E2D125D00E5E37A /* ViewControllerContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3FCB01E2D125D00E5E37A /* ViewControllerContainerFactory.swift */; };
+		4AE3FCB31E2D127400E5E37A /* AllContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3FCB21E2D127400E5E37A /* AllContainerFactory.swift */; };
+		4AE3FCB51E2D129100E5E37A /* ProvidersContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3FCB41E2D129100E5E37A /* ProvidersContainerFactory.swift */; };
+		4AE3FCB71E2D12D300E5E37A /* ContainerFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3FCB61E2D12D300E5E37A /* ContainerFactoryType.swift */; };
+		4AE3FCB91E2D13DF00E5E37A /* UIViewController+DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3FCB81E2D13DF00E5E37A /* UIViewController+DI.swift */; };
+		4AE3FCBB1E2D149600E5E37A /* LoginPanelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3FCBA1E2D149600E5E37A /* LoginPanelPresenter.swift */; };
+		4AE3FCC01E2D174300E5E37A /* LoginPanelPresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3FCBF1E2D174300E5E37A /* LoginPanelPresenterType.swift */; };
+		4AE3FCC31E2D177200E5E37A /* LoginPanelViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3FCC21E2D177200E5E37A /* LoginPanelViewType.swift */; };
+		4AE3FCC51E2D17BE00E5E37A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3FCC41E2D17BE00E5E37A /* User.swift */; };
+		4AE3FCC81E2D17E000E5E37A /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3FCC71E2D17E000E5E37A /* UserType.swift */; };
 		7862FC251E26A59A00357A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7862FC241E26A59A00357A4A /* Assets.xcassets */; };
 		7862FC281E26A59A00357A4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7862FC261E26A59A00357A4A /* LaunchScreen.storyboard */; };
 		7862FC331E26A59A00357A4A /* FireLampadesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7862FC321E26A59A00357A4A /* FireLampadesTests.swift */; };
@@ -32,15 +42,26 @@
 /* Begin PBXFileReference section */
 		1A346E256F1C429FAA537857 /* Pods_FireLampadesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireLampadesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F0AB45AB464903EA7E9E5A /* Pods-FireLampadesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLampadesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireLampadesTests/Pods-FireLampadesTests.release.xcconfig"; sourceTree = "<group>"; };
-		4A7EA2371E27D09F0083F31A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4A20C3DC1E2E2FDC00CD4D73 /* LoginPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPanelViewController.swift; sourceTree = "<group>"; };
+		4A20C3DE1E2E2FF800CD4D73 /* LoginPanelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginPanelViewController.xib; sourceTree = "<group>"; };
+		4A20C3E61E2E386C00CD4D73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A20C3E81E2E389A00CD4D73 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A20C3E91E2E389A00CD4D73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4A20C3EA1E2E389A00CD4D73 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A20C3EE1E2E3EB300CD4D73 /* PresentersContainerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentersContainerFactory.swift; sourceTree = "<group>"; };
+		4AE3FCB01E2D125D00E5E37A /* ViewControllerContainerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerContainerFactory.swift; sourceTree = "<group>"; };
+		4AE3FCB21E2D127400E5E37A /* AllContainerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllContainerFactory.swift; sourceTree = "<group>"; };
+		4AE3FCB41E2D129100E5E37A /* ProvidersContainerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidersContainerFactory.swift; sourceTree = "<group>"; };
+		4AE3FCB61E2D12D300E5E37A /* ContainerFactoryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerFactoryType.swift; sourceTree = "<group>"; };
+		4AE3FCB81E2D13DF00E5E37A /* UIViewController+DI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+DI.swift"; sourceTree = "<group>"; };
+		4AE3FCBA1E2D149600E5E37A /* LoginPanelPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPanelPresenter.swift; sourceTree = "<group>"; };
+		4AE3FCBF1E2D174300E5E37A /* LoginPanelPresenterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPanelPresenterType.swift; sourceTree = "<group>"; };
+		4AE3FCC21E2D177200E5E37A /* LoginPanelViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPanelViewType.swift; sourceTree = "<group>"; };
+		4AE3FCC41E2D17BE00E5E37A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4AE3FCC71E2D17E000E5E37A /* UserType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
 		7862FC171E26A59A00357A4A /* FireLampades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireLampades.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7862FC1A1E26A59A00357A4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7862FC1C1E26A59A00357A4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7862FC1F1E26A59A00357A4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7862FC221E26A59A00357A4A /* FireLampades.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FireLampades.xcdatamodel; sourceTree = "<group>"; };
 		7862FC241E26A59A00357A4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7862FC271E26A59A00357A4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7862FC291E26A59A00357A4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7862FC2E1E26A59A00357A4A /* FireLampadesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireLampadesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7862FC321E26A59A00357A4A /* FireLampadesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireLampadesTests.swift; sourceTree = "<group>"; };
 		7862FC341E26A59A00357A4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +91,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A20C3DB1E2E2FA900CD4D73 /* LoginPanel */ = {
+			isa = PBXGroup;
+			children = (
+				4A20C3DC1E2E2FDC00CD4D73 /* LoginPanelViewController.swift */,
+				4A20C3DE1E2E2FF800CD4D73 /* LoginPanelViewController.xib */,
+			);
+			path = LoginPanel;
+			sourceTree = "<group>";
+		};
+		4A20C3E41E2E35C000CD4D73 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4A20C3E81E2E389A00CD4D73 /* AppDelegate.swift */,
+				4A20C3E91E2E389A00CD4D73 /* GoogleService-Info.plist */,
+				4A20C3EA1E2E389A00CD4D73 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		4AE3FCAA1E2D0E1200E5E37A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4AE3FCC11E2D174B00E5E37A /* Type */,
+				4A20C3DB1E2E2FA900CD4D73 /* LoginPanel */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4AE3FCAB1E2D0E1A00E5E37A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4AE3FCBE1E2D171C00E5E37A /* Type */,
+				4AE3FCBA1E2D149600E5E37A /* LoginPanelPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4AE3FCAC1E2D0E2100E5E37A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4AE3FCC61E2D17C300E5E37A /* Type */,
+				4AE3FCC41E2D17BE00E5E37A /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4AE3FCAF1E2D118A00E5E37A /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				4AE3FCB01E2D125D00E5E37A /* ViewControllerContainerFactory.swift */,
+				4AE3FCB21E2D127400E5E37A /* AllContainerFactory.swift */,
+				4AE3FCB41E2D129100E5E37A /* ProvidersContainerFactory.swift */,
+				4AE3FCB61E2D12D300E5E37A /* ContainerFactoryType.swift */,
+				4AE3FCB81E2D13DF00E5E37A /* UIViewController+DI.swift */,
+				4A20C3EE1E2E3EB300CD4D73 /* PresentersContainerFactory.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		4AE3FCBE1E2D171C00E5E37A /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				4AE3FCBF1E2D174300E5E37A /* LoginPanelPresenterType.swift */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
+		4AE3FCC11E2D174B00E5E37A /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				4AE3FCC21E2D177200E5E37A /* LoginPanelViewType.swift */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
+		4AE3FCC61E2D17C300E5E37A /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				4AE3FCC71E2D17E000E5E37A /* UserType.swift */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
 		641CDC497662039BCD20839F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,14 +206,14 @@
 		7862FC191E26A59A00357A4A /* FireLampades */ = {
 			isa = PBXGroup;
 			children = (
-				7862FC1A1E26A59A00357A4A /* AppDelegate.swift */,
-				7862FC1C1E26A59A00357A4A /* ViewController.swift */,
-				7862FC1E1E26A59A00357A4A /* Main.storyboard */,
+				4AE3FCAF1E2D118A00E5E37A /* DI */,
+				4AE3FCAC1E2D0E2100E5E37A /* Model */,
+				4AE3FCAB1E2D0E1A00E5E37A /* Presenter */,
+				4AE3FCAA1E2D0E1200E5E37A /* View */,
+				4A20C3E41E2E35C000CD4D73 /* SupportingFiles */,
 				7862FC241E26A59A00357A4A /* Assets.xcassets */,
+				4A20C3E51E2E386C00CD4D73 /* Main.storyboard */,
 				7862FC261E26A59A00357A4A /* LaunchScreen.storyboard */,
-				7862FC291E26A59A00357A4A /* Info.plist */,
-				7862FC211E26A59A00357A4A /* FireLampades.xcdatamodeld */,
-				4A7EA2371E27D09F0083F31A /* GoogleService-Info.plist */,
 			);
 			path = FireLampades;
 			sourceTree = "<group>";
@@ -224,9 +328,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7862FC281E26A59A00357A4A /* LaunchScreen.storyboard in Resources */,
-				4A7EA2381E27D09F0083F31A /* GoogleService-Info.plist in Resources */,
+				4A20C3E71E2E386C00CD4D73 /* Main.storyboard in Resources */,
+				4A20C3DF1E2E2FF800CD4D73 /* LoginPanelViewController.xib in Resources */,
 				7862FC251E26A59A00357A4A /* Assets.xcassets in Resources */,
-				7862FC201E26A59A00357A4A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,9 +441,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7862FC1D1E26A59A00357A4A /* ViewController.swift in Sources */,
-				7862FC1B1E26A59A00357A4A /* AppDelegate.swift in Sources */,
-				7862FC231E26A59A00357A4A /* FireLampades.xcdatamodeld in Sources */,
+				4A20C3EB1E2E389A00CD4D73 /* AppDelegate.swift in Sources */,
+				4AE3FCC51E2D17BE00E5E37A /* User.swift in Sources */,
+				4A20C3EF1E2E3EB300CD4D73 /* PresentersContainerFactory.swift in Sources */,
+				4AE3FCB31E2D127400E5E37A /* AllContainerFactory.swift in Sources */,
+				4AE3FCC81E2D17E000E5E37A /* UserType.swift in Sources */,
+				4AE3FCC01E2D174300E5E37A /* LoginPanelPresenterType.swift in Sources */,
+				4AE3FCB71E2D12D300E5E37A /* ContainerFactoryType.swift in Sources */,
+				4AE3FCB91E2D13DF00E5E37A /* UIViewController+DI.swift in Sources */,
+				4AE3FCB11E2D125D00E5E37A /* ViewControllerContainerFactory.swift in Sources */,
+				4A20C3DD1E2E2FDC00CD4D73 /* LoginPanelViewController.swift in Sources */,
+				4AE3FCB51E2D129100E5E37A /* ProvidersContainerFactory.swift in Sources */,
+				4AE3FCBB1E2D149600E5E37A /* LoginPanelPresenter.swift in Sources */,
+				4AE3FCC31E2D177200E5E37A /* LoginPanelViewType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,10 +476,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7862FC1E1E26A59A00357A4A /* Main.storyboard */ = {
+		4A20C3E51E2E386C00CD4D73 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7862FC1F1E26A59A00357A4A /* Base */,
+				4A20C3E61E2E386C00CD4D73 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -479,7 +593,7 @@
 			baseConfigurationReference = 7E58B31C0419A49713BF657A /* Pods-FireLampades.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = FireLampades/Info.plist;
+				INFOPLIST_FILE = FireLampades/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.in.ios.FireLampades;
@@ -493,7 +607,7 @@
 			baseConfigurationReference = B07A4ADEA145AE8FB2685177 /* Pods-FireLampades.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = FireLampades/Info.plist;
+				INFOPLIST_FILE = FireLampades/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.in.ios.FireLampades;
@@ -563,19 +677,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		7862FC211E26A59A00357A4A /* FireLampades.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				7862FC221E26A59A00357A4A /* FireLampades.xcdatamodel */,
-			);
-			currentVersion = 7862FC221E26A59A00357A4A /* FireLampades.xcdatamodel */;
-			path = FireLampades.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 7862FC0F1E26A59900357A4A /* Project object */;
 }
