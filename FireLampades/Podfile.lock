@@ -1,5 +1,5 @@
 PODS:
-  - AnimatedTextInput (0.3.3)
+  - AnimatedTextInput (0.4.0)
   - FirebaseCore (3.4.6):
     - GoogleInterchangeUtilities (~> 1.2)
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
@@ -14,13 +14,13 @@ PODS:
     - Swinject (= 2.0.0)
 
 DEPENDENCIES:
-  - AnimatedTextInput (~> 0.3.0)
+  - AnimatedTextInput (~> 0.4.0)
   - FirebaseCore (~> 3.4)
   - Swinject (= 2.0.0)
   - SwinjectStoryboard (= 1.0.0)
 
 SPEC CHECKSUMS:
-  AnimatedTextInput: ca74e724c6b6c9d0566bdb0cffa38e476776c70c
+  AnimatedTextInput: 283f38c106399b809b126f80af79fca9f4aabfd6
   FirebaseCore: 03da1cb32615569bbc2830a22f9ad753d9a02ef5
   GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
@@ -28,6 +28,6 @@ SPEC CHECKSUMS:
   Swinject: 2e964a80d70ab09b3949c99032711f89147bfd60
   SwinjectStoryboard: 8e0d3c0202b64172bdf915d55e8dc83d9c4e7863
 
-PODFILE CHECKSUM: 147cbc874e820f292eb2ccbe4d5a1804c51c946d
+PODFILE CHECKSUM: c3a89cf49861f3fcbe4e3fab4d342ddbc77692d9
 
 COCOAPODS: 1.1.1

@@ -8,7 +8,7 @@ target 'FireLampades' do
   pod 'FirebaseCore', '~> 3.4'
   pod 'Swinject', '2.0.0'
   pod 'SwinjectStoryboard', '1.0.0'
-  pod 'AnimatedTextInput', '~> 0.3.0'
+  pod 'AnimatedTextInput', '~> 0.4.0' #with swift 3.0 support
 
   target 'FireLampadesTests' do
     inherit! :search_paths
