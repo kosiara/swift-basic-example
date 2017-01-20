@@ -22,6 +22,7 @@
 		4AE3FCC31E2D177200E5E37A /* LoginPanelViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3FCC21E2D177200E5E37A /* LoginPanelViewType.swift */; };
 		4AE3FCC51E2D17BE00E5E37A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3FCC41E2D17BE00E5E37A /* User.swift */; };
 		4AE3FCC81E2D17E000E5E37A /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3FCC71E2D17E000E5E37A /* UserType.swift */; };
+		7803E9291E324AC6002C2758 /* LampadesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7803E9281E324AC6002C2758 /* LampadesButton.swift */; };
 		7862FC251E26A59A00357A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7862FC241E26A59A00357A4A /* Assets.xcassets */; };
 		7862FC281E26A59A00357A4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7862FC261E26A59A00357A4A /* LaunchScreen.storyboard */; };
 		7862FC331E26A59A00357A4A /* FireLampadesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7862FC321E26A59A00357A4A /* FireLampadesTests.swift */; };
@@ -59,6 +60,7 @@
 		4AE3FCC21E2D177200E5E37A /* LoginPanelViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPanelViewType.swift; sourceTree = "<group>"; };
 		4AE3FCC41E2D17BE00E5E37A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4AE3FCC71E2D17E000E5E37A /* UserType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
+		7803E9281E324AC6002C2758 /* LampadesButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LampadesButton.swift; sourceTree = "<group>"; };
 		7862FC171E26A59A00357A4A /* FireLampades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireLampades.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7862FC241E26A59A00357A4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7862FC271E26A59A00357A4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -183,6 +185,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7803E9271E324A62002C2758 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7803E9281E324AC6002C2758 /* LampadesButton.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		7862FC0E1E26A59900357A4A = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +216,7 @@
 		7862FC191E26A59A00357A4A /* FireLampades */ = {
 			isa = PBXGroup;
 			children = (
+				7803E9271E324A62002C2758 /* Utilities */,
 				4AE3FCAF1E2D118A00E5E37A /* DI */,
 				4AE3FCAC1E2D0E2100E5E37A /* Model */,
 				4AE3FCAB1E2D0E1A00E5E37A /* Presenter */,
@@ -443,6 +454,7 @@
 			files = (
 				4A20C3EB1E2E389A00CD4D73 /* AppDelegate.swift in Sources */,
 				4AE3FCC51E2D17BE00E5E37A /* User.swift in Sources */,
+				7803E9291E324AC6002C2758 /* LampadesButton.swift in Sources */,
 				4A20C3EF1E2E3EB300CD4D73 /* PresentersContainerFactory.swift in Sources */,
 				4AE3FCB31E2D127400E5E37A /* AllContainerFactory.swift in Sources */,
 				4AE3FCC81E2D17E000E5E37A /* UserType.swift in Sources */,
