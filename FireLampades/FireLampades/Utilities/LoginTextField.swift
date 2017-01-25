@@ -9,7 +9,7 @@ class LoginTextField: UITextField {
 
     var tintedClearImage: UIImage?
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupTintColor()
     }
@@ -20,13 +20,13 @@ class LoginTextField: UITextField {
     }
 
     func setupTintColor() {
-        clearButtonMode = UITextFieldViewMode.WhileEditing
-        borderStyle = UITextBorderStyle.RoundedRect
+        clearButtonMode = UITextFieldViewMode.whileEditing
+        borderStyle = UITextBorderStyle.roundedRect
         layer.cornerRadius = 8.0
         layer.masksToBounds = true
-        layer.borderColor = tintColor.CGColor
+        layer.borderColor = tintColor.cgColor
         layer.borderWidth = 1.5
-        backgroundColor = UIColor.clearColor()
+        backgroundColor = UIColor.clear
         textColor = tintColor
     }
 
@@ -39,35 +39,31 @@ class LoginTextField: UITextField {
         for view in subviews as! [UIView] {
             if view is UIButton {
                 let button = view as! UIButton
-                if let uiImage = button.imageForState(.Highlighted) {
+                if let uiImage = button.image(for: .highlighted) {
                     if tintedClearImage == nil {
-                        tintedClearImage = tintImage(uiImage, tintColor)
+                        tintedClearImage = tintImage(image: uiImage, color: tintColor)
                     }
-                    button.setImage(tintedClearImage, forState: .Normal)
-                    button.setImage(tintedClearImage, forState: .Highlighted)
+                    button.setImage(tintedClearImage, for: .normal)
+                    button.setImage(tintedClearImage, for: .highlighted)
                 }
             }
         }
     }
 }
 
-func tintImage(image: UIImage, color: UIColor) -> UIImage {
+func tintImage(image: UIImage, color: UIColor) -> UIImage? {
     let size = image.size
 
     UIGraphicsBeginImageContextWithOptions(size, false, image.scale)
-    let context = UIGraphicsGetCurrentContext()
-    image.drawAtPoint(CGPointZero, blendMode: CGBlendMode.Normal, alpha: 1.0)
+    guard let context = UIGraphicsGetCurrentContext() else { return UIImage() }
+    image.draw(at: CGPoint(x: 0, y: 0), blendMode: CGBlendMode.normal, alpha: 1.0)
 
-    CGContextSetFillColorWithColor(context, color.CGColor)
-    CGContextSetBlendMode(context, CGBlendMode.SourceIn)
-    CGContextSetAlpha(context, 1.0)
+    context.setFillColor(color.cgColor)
+    context.setBlendMode(CGBlendMode.sourceIn)
+    context.setAlpha(1.0)
 
-    let rect = CGRectMake(
-            CGPointZero.x,
-            CGPointZero.y,
-            image.size.width,
-            image.size.height)
-    CGContextFillRect(UIGraphicsGetCurrentContext(), rect)
+    let rect = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
+    UIGraphicsGetCurrentContext()?.fill(rect)
     let tintedImage = UIGraphicsGetImageFromCurrentImageContext()
     UIGraphicsEndImageContext()
 
