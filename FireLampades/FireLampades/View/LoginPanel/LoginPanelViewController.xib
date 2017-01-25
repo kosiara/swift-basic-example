@@ -61,13 +61,25 @@
                         <constraint firstAttribute="trailing" secondItem="r7I-S4-ssh" secondAttribute="trailing" constant="10" id="v3X-2T-ag1"/>
                     </constraints>
                 </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_main_logo" translatesAutoresizingMaskIntoConstraints="NO" id="kff-8u-oaF">
+                    <rect key="frame" x="109" y="75" width="157" height="175"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="157" id="1Fy-u6-NqV"/>
+                        <constraint firstAttribute="height" constant="175" id="oyy-1O-11S"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="0.67000000000000004" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="KXJ-LO-m7b" firstAttribute="centerY" secondItem="Zp3-a4-yna" secondAttribute="centerY" id="HlR-W6-4HA"/>
+                <constraint firstItem="kff-8u-oaF" firstAttribute="centerX" secondItem="Zp3-a4-yna" secondAttribute="centerX" id="KFL-HM-0Dg"/>
+                <constraint firstItem="KXJ-LO-m7b" firstAttribute="top" secondItem="kff-8u-oaF" secondAttribute="bottom" constant="19.5" id="PLs-lK-t83"/>
                 <constraint firstItem="KXJ-LO-m7b" firstAttribute="centerX" secondItem="Zp3-a4-yna" secondAttribute="centerX" id="kL5-IY-VFE"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="login_main_logo" width="63" height="76"/>
+    </resources>
 </document>
