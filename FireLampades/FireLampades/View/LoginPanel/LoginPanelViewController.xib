@@ -42,6 +42,9 @@
                             <state key="normal" title="Submit">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="submitButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="fwz-8e-rHE"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
