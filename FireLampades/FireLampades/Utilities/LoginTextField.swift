@@ -43,14 +43,13 @@ class LoginTextField: UITextField {
 
     private func tintClearImage() {
         for view in subviews as [UIView] {
-            if view is UIButton {
-                let button = view as? UIButton
-                if let uiImage = button?.image(for: .highlighted) {
+            if view is UIButton,
+            let button = view as? UIButton,
+            let uiImage = button.image(for: .highlighted) {
                     tintedClearImage = tintedClearImage == nil ? tintImage(image: uiImage, color: tintColor) : tintedClearImage
 
-                    button?.setImage(tintedClearImage, for: .normal)
-                    button?.setImage(tintedClearImage, for: .highlighted)
-                }
+                    button.setImage(tintedClearImage, for: .normal)
+                    button.setImage(tintedClearImage, for: .highlighted)
             }
         }
     }
