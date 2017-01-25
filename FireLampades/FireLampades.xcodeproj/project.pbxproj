@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17D4615CE357EE1E661E8842 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D46738C92838B606195600 /* LoginTextField.swift */; };
 		17D46DB6EFC783A456E34311 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D465B2A3B14D3C6F67F622 /* ColorUtil.swift */; };
 		4A20C3DD1E2E2FDC00CD4D73 /* LoginPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A20C3DC1E2E2FDC00CD4D73 /* LoginPanelViewController.swift */; };
 		4A20C3DF1E2E2FF800CD4D73 /* LoginPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A20C3DE1E2E2FF800CD4D73 /* LoginPanelViewController.xib */; };
@@ -27,6 +28,7 @@
 		7862FC251E26A59A00357A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7862FC241E26A59A00357A4A /* Assets.xcassets */; };
 		7862FC281E26A59A00357A4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7862FC261E26A59A00357A4A /* LaunchScreen.storyboard */; };
 		7862FC331E26A59A00357A4A /* FireLampadesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7862FC321E26A59A00357A4A /* FireLampadesTests.swift */; };
+		78FB4C2E1E38E7AF0098ED44 /* UIImage+Tint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FB4C2D1E38E7AF0098ED44 /* UIImage+Tint.swift */; };
 		A7AAE9413A43DD8D2436EB37 /* Pods_FireLampades.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D680E33630B6F5E13E076E /* Pods_FireLampades.framework */; };
 		D8AA3A5C4015785FB3A8BBA3 /* Pods_FireLampadesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A346E256F1C429FAA537857 /* Pods_FireLampadesTests.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		17D465B2A3B14D3C6F67F622 /* ColorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
+		17D46738C92838B606195600 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		1A346E256F1C429FAA537857 /* Pods_FireLampadesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireLampadesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F0AB45AB464903EA7E9E5A /* Pods-FireLampadesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLampadesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireLampadesTests/Pods-FireLampadesTests.release.xcconfig"; sourceTree = "<group>"; };
 		4A20C3DC1E2E2FDC00CD4D73 /* LoginPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPanelViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 		7862FC2E1E26A59A00357A4A /* FireLampadesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireLampadesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7862FC321E26A59A00357A4A /* FireLampadesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireLampadesTests.swift; sourceTree = "<group>"; };
 		7862FC341E26A59A00357A4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78FB4C2D1E38E7AF0098ED44 /* UIImage+Tint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Tint.swift"; sourceTree = "<group>"; };
 		7E58B31C0419A49713BF657A /* Pods-FireLampades.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLampades.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireLampades/Pods-FireLampades.debug.xcconfig"; sourceTree = "<group>"; };
 		85D680E33630B6F5E13E076E /* Pods_FireLampades.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireLampades.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07A4ADEA145AE8FB2685177 /* Pods-FireLampades.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLampades.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireLampades/Pods-FireLampades.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,6 +196,8 @@
 			children = (
 				7803E9281E324AC6002C2758 /* LampadesButton.swift */,
 				17D465B2A3B14D3C6F67F622 /* ColorUtil.swift */,
+				17D46738C92838B606195600 /* LoginTextField.swift */,
+				78FB4C2D1E38E7AF0098ED44 /* UIImage+Tint.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -463,6 +469,7 @@
 				4AE3FCC81E2D17E000E5E37A /* UserType.swift in Sources */,
 				4AE3FCC01E2D174300E5E37A /* LoginPanelPresenterType.swift in Sources */,
 				4AE3FCB71E2D12D300E5E37A /* ContainerFactoryType.swift in Sources */,
+				78FB4C2E1E38E7AF0098ED44 /* UIImage+Tint.swift in Sources */,
 				4AE3FCB91E2D13DF00E5E37A /* UIViewController+DI.swift in Sources */,
 				4AE3FCB11E2D125D00E5E37A /* ViewControllerContainerFactory.swift in Sources */,
 				4A20C3DD1E2E2FDC00CD4D73 /* LoginPanelViewController.swift in Sources */,
@@ -470,6 +477,7 @@
 				4AE3FCBB1E2D149600E5E37A /* LoginPanelPresenter.swift in Sources */,
 				4AE3FCC31E2D177200E5E37A /* LoginPanelViewType.swift in Sources */,
 				17D46DB6EFC783A456E34311 /* ColorUtil.swift in Sources */,
+				17D4615CE357EE1E661E8842 /* LoginTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

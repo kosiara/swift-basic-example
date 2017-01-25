@@ -14,8 +14,8 @@ class LoginPanelViewController: UIViewController, LoginPanelViewType {
     
     var loginPanelPresenter: LoginPanelPresenterType!
     
-    @IBOutlet var username: UITextField!
-    @IBOutlet var password: UITextField!
+    @IBOutlet var username: LoginTextField!
+    @IBOutlet var password: LoginTextField!
     @IBOutlet var mainView: UIView!
     @IBOutlet var innerUserPassView: UIView!
     
