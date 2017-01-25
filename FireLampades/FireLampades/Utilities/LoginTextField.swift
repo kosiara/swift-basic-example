@@ -22,10 +22,10 @@ class LoginTextField: UITextField {
     func setupTintColor() {
         clearButtonMode = UITextFieldViewMode.whileEditing
         borderStyle = UITextBorderStyle.roundedRect
-        layer.cornerRadius = 8.0
+        layer.cornerRadius = 4.0
         layer.masksToBounds = true
         layer.borderColor = tintColor.cgColor
-        layer.borderWidth = 1.5
+        layer.borderWidth = 0.5
         backgroundColor = UIColor.clear
         textColor = tintColor
     }
