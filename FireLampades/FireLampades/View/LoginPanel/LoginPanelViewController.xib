@@ -24,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXJ-LO-m7b">
-                    <rect key="frame" x="67" y="269.5" width="240" height="128"/>
+                    <rect key="frame" x="67" y="270" width="240" height="128"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fid-y6-PZl">
                             <rect key="frame" x="10" y="8" width="220" height="30"/>
@@ -38,9 +38,12 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                         </textField>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lX6-Sv-bAW" customClass="LampadesButton" customModule="FireLampades" customModuleProvider="target">
-                            <rect key="frame" x="73" y="84" width="94" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lX6-Sv-bAW" customClass="LampadesButton" customModule="FireLampades" customModuleProvider="target">
+                            <rect key="frame" x="70" y="84" width="100" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="53D-VJ-3hU" userLabel="width = 120"/>
+                                <constraint firstAttribute="height" constant="50" id="LjF-Rg-TmT" userLabel="height = 35"/>
+                            </constraints>
                             <state key="normal" title="Submit">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -51,12 +54,15 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="lX6-Sv-bAW" firstAttribute="top" secondItem="r7I-S4-ssh" secondAttribute="bottom" constant="8" id="E8u-F8-RQx"/>
+                        <constraint firstItem="lX6-Sv-bAW" firstAttribute="centerX" secondItem="KXJ-LO-m7b" secondAttribute="centerX" id="EQd-4S-X0Y"/>
                         <constraint firstItem="r7I-S4-ssh" firstAttribute="top" secondItem="fid-y6-PZl" secondAttribute="bottom" constant="8" id="Kni-Q9-v1q"/>
                         <constraint firstAttribute="width" constant="240" id="MDK-fP-ISa"/>
                         <constraint firstAttribute="trailing" secondItem="fid-y6-PZl" secondAttribute="trailing" constant="10" id="PqK-xp-En4"/>
-                        <constraint firstAttribute="height" constant="128" id="QYu-sI-BVy"/>
+                        <constraint firstAttribute="height" constant="128" id="QYu-sI-BVy" userLabel="height = 140"/>
                         <constraint firstItem="fid-y6-PZl" firstAttribute="top" secondItem="KXJ-LO-m7b" secondAttribute="top" constant="8" id="WTy-qo-bfi"/>
                         <constraint firstItem="r7I-S4-ssh" firstAttribute="leading" secondItem="KXJ-LO-m7b" secondAttribute="leading" constant="10" id="YSn-HG-W5e"/>
+                        <constraint firstItem="lX6-Sv-bAW" firstAttribute="centerX" secondItem="r7I-S4-ssh" secondAttribute="centerX" id="cbj-3V-6Hp"/>
                         <constraint firstItem="fid-y6-PZl" firstAttribute="leading" secondItem="KXJ-LO-m7b" secondAttribute="leading" constant="10" id="dkJ-bI-0Zg"/>
                         <constraint firstAttribute="trailing" secondItem="r7I-S4-ssh" secondAttribute="trailing" constant="10" id="v3X-2T-ag1"/>
                     </constraints>
