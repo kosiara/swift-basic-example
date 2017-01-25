@@ -13,6 +13,6 @@ class LampadesButton: UIButton {
     override func awakeFromNib() {
         super.awakeFromNib()
         backgroundColor = UIColor.red
-        
+        layer.cornerRadius = 5;
     }
 }
