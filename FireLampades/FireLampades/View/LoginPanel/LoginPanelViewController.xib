@@ -13,8 +13,8 @@
             <connections>
                 <outlet property="innerUserPassView" destination="KXJ-LO-m7b" id="TH0-3g-hYk"/>
                 <outlet property="mainView" destination="Zp3-a4-yna" id="5GU-j4-h67"/>
-                <outlet property="password" destination="fid-y6-PZl" id="JHb-oq-PYP"/>
-                <outlet property="username" destination="r7I-S4-ssh" id="Fet-HZ-5NT"/>
+                <outlet property="password" destination="r7I-S4-ssh" id="vRJ-9x-EQ7"/>
+                <outlet property="username" destination="fid-y6-PZl" id="AWD-29-i0T"/>
                 <outlet property="view" destination="Zp3-a4-yna" id="uEe-5s-FTb"/>
             </connections>
         </placeholder>
@@ -35,6 +35,7 @@
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="r7I-S4-ssh">
                             <rect key="frame" x="10" y="46" width="220" height="30"/>
                             <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lX6-Sv-bAW" customClass="LampadesButton" customModule="FireLampades" customModuleProvider="target">
