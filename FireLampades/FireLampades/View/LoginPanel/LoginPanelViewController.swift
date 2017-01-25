@@ -26,6 +26,12 @@ class LoginPanelViewController: UIViewController, LoginPanelViewType {
         innerUserPassView.backgroundColor = ColorUtil.colorWithHexString(hexString: "21314a")
         username.backgroundColor = ColorUtil.colorWithHexString(hexString: "21314a")
         password.backgroundColor = ColorUtil.colorWithHexString(hexString: "21314a")
+        
+        username.textColor = UIColor.white
+        password.textColor = UIColor.white
+        
+        username.attributedPlaceholder = NSAttributedString(string:"Email address:", attributes: [NSForegroundColorAttributeName: UIColor.white])
+
     }
     
     @IBAction func submitButtonTapped(sender: UIButton) {
