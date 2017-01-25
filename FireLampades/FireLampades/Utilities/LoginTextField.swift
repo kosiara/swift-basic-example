@@ -46,7 +46,7 @@ class LoginTextField: UITextField {
             if view is UIButton,
             let button = view as? UIButton,
             let uiImage = button.image(for: .highlighted) {
-                    tintedClearImage = tintedClearImage == nil ? tintImage(image: uiImage, color: tintColor) : tintedClearImage
+                    tintedClearImage = tintedClearImage == nil ? uiImage.tintImage(color: tintColor) : tintedClearImage
 
                     button.setImage(tintedClearImage, for: .normal)
                     button.setImage(tintedClearImage, for: .highlighted)
@@ -55,21 +55,3 @@ class LoginTextField: UITextField {
     }
 }
 
-func tintImage(image: UIImage, color: UIColor) -> UIImage? {
-    let size = image.size
-
-    UIGraphicsBeginImageContextWithOptions(size, false, image.scale)
-    guard let context = UIGraphicsGetCurrentContext() else { return UIImage() }
-    image.draw(at: CGPoint(x: 0, y: 0), blendMode: CGBlendMode.normal, alpha: 1.0)
-
-    context.setFillColor(color.cgColor)
-    context.setBlendMode(CGBlendMode.sourceIn)
-    context.setAlpha(1.0)
-
-    let rect = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
-    UIGraphicsGetCurrentContext()?.fill(rect)
-    let tintedImage = UIGraphicsGetImageFromCurrentImageContext()
-    UIGraphicsEndImageContext()
-
-    return tintedImage
-}
