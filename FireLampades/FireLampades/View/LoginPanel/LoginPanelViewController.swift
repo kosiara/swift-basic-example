@@ -31,7 +31,7 @@ class LoginPanelViewController: UIViewController, LoginPanelViewType {
         password.textColor = UIColor.white
         
         username.attributedPlaceholder = NSAttributedString(string:"Email address:", attributes: [NSForegroundColorAttributeName: UIColor.white])
-
+        password.attributedPlaceholder = NSAttributedString(string:"Password:", attributes: [NSForegroundColorAttributeName: UIColor.white])
     }
     
     @IBAction func submitButtonTapped(sender: UIButton) {
