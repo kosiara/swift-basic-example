@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17D46DB6EFC783A456E34311 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D465B2A3B14D3C6F67F622 /* ColorUtil.swift */; };
 		4A20C3DD1E2E2FDC00CD4D73 /* LoginPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A20C3DC1E2E2FDC00CD4D73 /* LoginPanelViewController.swift */; };
 		4A20C3DF1E2E2FF800CD4D73 /* LoginPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A20C3DE1E2E2FF800CD4D73 /* LoginPanelViewController.xib */; };
 		4A20C3E71E2E386C00CD4D73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A20C3E51E2E386C00CD4D73 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17D465B2A3B14D3C6F67F622 /* ColorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 		1A346E256F1C429FAA537857 /* Pods_FireLampadesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireLampadesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F0AB45AB464903EA7E9E5A /* Pods-FireLampadesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLampadesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireLampadesTests/Pods-FireLampadesTests.release.xcconfig"; sourceTree = "<group>"; };
 		4A20C3DC1E2E2FDC00CD4D73 /* LoginPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPanelViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				7803E9281E324AC6002C2758 /* LampadesButton.swift */,
+				17D465B2A3B14D3C6F67F622 /* ColorUtil.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				4AE3FCB51E2D129100E5E37A /* ProvidersContainerFactory.swift in Sources */,
 				4AE3FCBB1E2D149600E5E37A /* LoginPanelPresenter.swift in Sources */,
 				4AE3FCC31E2D177200E5E37A /* LoginPanelViewType.swift in Sources */,
+				17D46DB6EFC783A456E34311 /* ColorUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
