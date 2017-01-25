@@ -8,6 +8,7 @@ import UIKit
 class LoginTextField: UITextField {
 
     var tintedClearImage: UIImage?
+    var borderWidth = 0.5
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -19,13 +20,17 @@ class LoginTextField: UITextField {
         setupTintColor()
     }
 
+    private func refreshProperties() {
+        layer.borderWidth = CGFloat(borderWidth)
+    }
+
     func setupTintColor() {
         clearButtonMode = UITextFieldViewMode.whileEditing
         borderStyle = UITextBorderStyle.roundedRect
         layer.cornerRadius = 4.0
         layer.masksToBounds = true
         layer.borderColor = tintColor.cgColor
-        layer.borderWidth = 0.5
+        layer.borderWidth = CGFloat(borderWidth)
         backgroundColor = UIColor.clear
         textColor = tintColor
     }
@@ -33,6 +38,7 @@ class LoginTextField: UITextField {
     override func layoutSubviews() {
         super.layoutSubviews()
         tintClearImage()
+        refreshProperties()
     }
 
     private func tintClearImage() {
