@@ -11,8 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginPanelViewController" customModule="FireLampades" customModuleProvider="target">
             <connections>
-                <outlet property="password" destination="fid-y6-PZl" id="JHb-oq-PYP"/>
-                <outlet property="username" destination="r7I-S4-ssh" id="Fet-HZ-5NT"/>
+                <outlet property="innerUserPassView" destination="KXJ-LO-m7b" id="TH0-3g-hYk"/>
+                <outlet property="mainView" destination="Zp3-a4-yna" id="5GU-j4-h67"/>
+                <outlet property="password" destination="r7I-S4-ssh" id="vRJ-9x-EQ7"/>
+                <outlet property="username" destination="fid-y6-PZl" id="AWD-29-i0T"/>
                 <outlet property="view" destination="Zp3-a4-yna" id="uEe-5s-FTb"/>
             </connections>
         </placeholder>
@@ -21,38 +23,34 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lX6-Sv-bAW" customClass="LampadesButton" customModule="FireLampades" customModuleProvider="target">
-                    <rect key="frame" x="76" y="535" width="250" height="69"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
-                </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXJ-LO-m7b">
                     <rect key="frame" x="67" y="269.5" width="240" height="128"/>
                     <subviews>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fid-y6-PZl">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fid-y6-PZl">
                             <rect key="frame" x="10" y="8" width="220" height="30"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r7I-S4-ssh">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="r7I-S4-ssh">
                             <rect key="frame" x="10" y="46" width="220" height="30"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                         </textField>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xd-fM-BME">
-                            <rect key="frame" x="95" y="83.5" width="49" height="30"/>
-                            <state key="normal" title="Submit"/>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lX6-Sv-bAW" customClass="LampadesButton" customModule="FireLampades" customModuleProvider="target">
+                            <rect key="frame" x="73" y="84" width="94" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Submit">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
                             <connections>
-                                <action selector="submitButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="x5x-bM-U7H"/>
+                                <action selector="submitButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="fwz-8e-rHE"/>
                             </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="9Xd-fM-BME" firstAttribute="top" secondItem="r7I-S4-ssh" secondAttribute="bottom" constant="8" id="CXk-HA-gyW"/>
-                        <constraint firstItem="9Xd-fM-BME" firstAttribute="centerX" secondItem="KXJ-LO-m7b" secondAttribute="centerX" id="Izb-xK-aPY"/>
                         <constraint firstItem="r7I-S4-ssh" firstAttribute="top" secondItem="fid-y6-PZl" secondAttribute="bottom" constant="8" id="Kni-Q9-v1q"/>
                         <constraint firstAttribute="width" constant="240" id="MDK-fP-ISa"/>
                         <constraint firstAttribute="trailing" secondItem="fid-y6-PZl" secondAttribute="trailing" constant="10" id="PqK-xp-En4"/>
@@ -64,7 +62,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.67000000000000004" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="KXJ-LO-m7b" firstAttribute="centerY" secondItem="Zp3-a4-yna" secondAttribute="centerY" id="HlR-W6-4HA"/>
                 <constraint firstItem="KXJ-LO-m7b" firstAttribute="centerX" secondItem="Zp3-a4-yna" secondAttribute="centerX" id="kL5-IY-VFE"/>

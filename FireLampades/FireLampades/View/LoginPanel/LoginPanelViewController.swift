@@ -16,10 +16,22 @@ class LoginPanelViewController: UIViewController, LoginPanelViewType {
     
     @IBOutlet var username: UITextField!
     @IBOutlet var password: UITextField!
+    @IBOutlet var mainView: UIView!
+    @IBOutlet var innerUserPassView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loginPanelPresenter.view = self
+        mainView.backgroundColor = ColorUtil.colorWithHexString(hexString: "21314a")
+        innerUserPassView.backgroundColor = ColorUtil.colorWithHexString(hexString: "21314a")
+        username.backgroundColor = ColorUtil.colorWithHexString(hexString: "21314a")
+        password.backgroundColor = ColorUtil.colorWithHexString(hexString: "21314a")
+        
+        username.textColor = UIColor.white
+        password.textColor = UIColor.white
+        
+        username.attributedPlaceholder = NSAttributedString(string:"Email address:", attributes: [NSForegroundColorAttributeName: UIColor.white])
+        password.attributedPlaceholder = NSAttributedString(string:"Password:", attributes: [NSForegroundColorAttributeName: UIColor.white])
     }
     
     @IBAction func submitButtonTapped(sender: UIButton) {
